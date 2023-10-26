@@ -32,6 +32,8 @@ jobs:
         run: echo ${{ vars.TEST_VAR }}
       
       - name: Update VAR
+        env:
+          GH_TOKEN: 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
         run: |
           gh api \
           --method PATCH \
