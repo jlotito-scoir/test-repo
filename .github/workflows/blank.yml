@@ -28,6 +28,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo ${{ vars.TEST_VAR }}
+      
+      - name: Update VAR
+        run: |
+          gh api \
+          --method PATCH \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/jlotito-scoir/test-repo/actions/variables/STAGE_COMMIT_ID \
+          -f name='STAGE_COMMIT_ID' \
+          -f value='2' 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
