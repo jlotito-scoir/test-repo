@@ -18,7 +18,7 @@ jobs:
     name: Test Run
     environment: ${{ inputs.env }}
     env:
-      GH_TOKEN: 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
+      GH_TOKEN: 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
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
