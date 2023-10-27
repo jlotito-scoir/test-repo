@@ -29,9 +29,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          ${{ vars.DEMO_COMMIT_ID }}
-          ${{ vars.STAGE_COMMIT_ID }}
-          ${{ vars.PROD_COMMIT_ID }}
+          echo ${{ vars.DEMO_COMMIT_ID }}
+          echo ${{ vars.STAGE_COMMIT_ID }}
+          echo ${{ vars.PROD_COMMIT_ID }}
       
       - name: Update DEMO
         env:
@@ -55,6 +55,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ${{ vars.DEMO_COMMIT_ID }}
-          ${{ vars.STAGE_COMMIT_ID }}
-          ${{ vars.PROD_COMMIT_ID }}
+          echo ${{ vars.DEMO_COMMIT_ID }}
+          echo ${{ vars.STAGE_COMMIT_ID }}
+          echo ${{ vars.PROD_COMMIT_ID }}
