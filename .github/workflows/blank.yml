@@ -32,7 +32,7 @@ jobs:
       
       - name: Update VAR
         env:
-          GH_TOKEN: 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
+          GH_TOKEN: ${{ secrets.GH_TOKEN}}
         run: |
           gh variable list
 
