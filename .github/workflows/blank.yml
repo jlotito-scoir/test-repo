@@ -32,7 +32,7 @@ jobs:
       
       - name: Update VAR
         env:
-          GH_TOKEN: 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
+          GH_TOKEN: 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
         run: |
           gh variable list
 
